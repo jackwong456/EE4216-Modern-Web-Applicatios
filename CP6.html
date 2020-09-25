@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>EE4216 Lab1 CP6</title>
+		<link rel = "stylesheet" href = "mystyle4.css">
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class = "header">
+			<h1>My CityU Website</h1>
+			<p>With a <b>flexible</b> and <b>responsive</b> layout.</p>
+		</header>
+		
+		<!-- Navigation Bar -->
+		<nav class = "navbar">
+			<a href = "htttp://live.staticflicker.com/1728/42736240511_91cd425b59_c_d.jpg">Photo 1</a>
+			<a href = "htttp://live.staticflicker.com/1945/45582150001_7bda8a2ee0_c_d.jpg">Photo 2</a>
+			<a href = "#">Link 3</a>
+			<a href = "#">Link 4</a>
+		</nav>
+		
+		<!-- The flwxible grid (content) -->
+		<section class = "row">
+			<aside class = "side">
+				<h2>About Me</h2>
+				<h5>Photo of me:</h5>
+				<div class = "fakeimg" style = "height:200px;">Image</div>
+				<p>Some text about me in culpa qui officis deserunt mollit anim..</p>
+				<h3>More Text</h3>
+				<p>Lorem ipsum dolor sit ame.</p>
+				<div class = "fakeimg" style = "height:60px;">Image</div><br>
+				<div class = "fakeimg" style = "height:60px;">Image</div><br>
+				<div class = "fakeimg" style = "height:60px;">Image</div><br>
+			</aside>
+			
+			<article class = "main">
+				<section class = "section">
+					<h2>TITLE HEADING</h2>
+					<h5>Title description, Dec 7, 2019</h5>
+					<div class = "fakeimg" style = "height:200px;">Image</div>
+					<p>Some text..</p>
+					<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				</section>	
+				
+				<br>
+				
+				<section class = "section">
+					<h2>TITLE HEADING</h2>
+					<h5>Title description, Sep 2, 2019</h5>
+					<div class = "fakeimg" style = "height:200px;">Image</div>
+					<p>Some text..</p>
+					<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				</section>
+			</article>
+		</section>
+		
+		<!-- Footer -->
+		<footer class = "footer">
+			<h2>Footer</h2>
+		</footer>
+		
+		<!-- The Modal -->
+		<div id = "myModal" class = "modal">
+			<!-- Modal content -->
+			<div class = "modal-content">
+				<span class = "close">&times;</span>
+				<p>Some text in the Modal..</p>
+			</div>
+		</div>
+		
+		<script>
+			var modal = document.getElementById("myModal");
+			var navbar = document.getElementsByClassName("navbar")[0];
+			var close = document.getElementsByClassName("close")[0];
+
+			navbar.onclick = function() {
+				modal.style.display = "flex";
+			}
+
+			close.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>		
+	</body>
+</html>
